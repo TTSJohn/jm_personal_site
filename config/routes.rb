@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'jm#home'
+
   get 'bio' => 'jm#bio'
 
   get 'home' => 'jm#home'
@@ -7,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'resume' => 'jm#resume'
 
-  get 'jm/education'
+  get 'education' => 'jm#education'
 
   get 'jm/contact'
 
